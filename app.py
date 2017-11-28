@@ -18,7 +18,19 @@ Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
 
 classifierDT = classifierDT.fit(X,Y)
 
-#TODO: ask User for prediction value
-prediction = clf.predict([[190, 70, 43]])
+height = int(input("Enter height: "))
+weigth = int(input("Enter weight: "))
+shoesize = int(input("Enter shoe size: "))
 
-print(prediction)
+def prediction(height, weigth, shoesize)
+    #TODO: ask User for prediction value
+
+    innerList = []
+    innerList.append(height)
+    innerList.append(weigth)
+    innerList.append(shoesize)
+    outerlist = [innerList]
+
+    prediction = clf.predict(outerlist)
+
+    print(prediction)
